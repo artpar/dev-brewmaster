@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>freeCodeCamp Programming Tutorials: Python, JavaScript, Git &amp; More</title>
+<meta content="True" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&amp;family=Roboto+Mono:wght@400;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<link as="style" href="/news/assets/css/global-a9196627bc.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<link href="/news/assets/css/screen-0421e26544.css" rel="stylesheet" type="text/css"/>
+<link href="/news/assets/css/search-bar-124f5f949c.css" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+<meta content="freeCodeCamp, programming, front-end, programmer, article, regular expressions, Python, JavaScript, AWS, JSON, HTML, CSS, Bootstrap, React, Vue, Webpack" name="keywords"/>
+<meta content="Browse thousands of programming tutorials written by experts. Learn Web Development, Data Science, DevOps, Security, and get developer career advice." name="description"/>
+<link href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico" rel="icon" type="image/png"/>
+<link href="https://www.freecodecamp.org/news/" rel="canonical"/>
+<meta content="no-referrer-when-downgrade" name="referrer"/>
+<link href="." rel="next"/>
+<meta content="freeCodeCamp.org" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="freeCodeCamp.org" property="og:title"/>
+<meta content="Browse thousands of programming tutorials written by experts. Learn Web Development, Data Science, DevOps, Security, and get developer career advice." property="og:description"/>
+<meta content="https://www.freecodecamp.org/news/" property="og:url"/>
+<meta content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png" property="og:image"/>
+<meta content="https://www.facebook.com/freecodecamp" property="article:publisher"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="freeCodeCamp.org" name="twitter:title"/>
+<meta content="Browse thousands of programming tutorials written by experts. Learn Web Development, Data Science, DevOps, Security, and get developer career advice." name="twitter:description"/>
+<meta content="https://www.freecodecamp.org/news/" name="twitter:url"/>
+<meta content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png" name="twitter:image"/>
+<meta content="@freecodecamp" name="twitter:site"/>
+<meta content="1920" property="og:image:width"/>
+<meta content="1080" property="og:image:height"/>
+
+<meta content="Eleventy" name="generator"/>
+<link href="https://www.freecodecamp.org/news/rss/" rel="alternate" title="freeCodeCamp.org" type="application/rss+xml"/>
+</head>
+<body class="home-template">
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5D6RKKP" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<div class="site-wrapper">
+<nav class="site-nav nav-padding">
+<div class="site-nav-left">
+<form data-test-label="search-bar" id="search-form">
+<div class="searchbox__wrapper" role="search">
+<label class="fcc_sr_only" for="search-input">
+            Search
+        </label>
+<input id="search-input" placeholder="
+    Search 11,700+ tutorials
+" type="search"/>
+<button class="ais-SearchBox-submit" type="submit">
+<svg class="ais-SearchBox-submitIcon" height="10" viewbox="0 0 40 40" width="10" xmlns="https://www.w3.org/2000/svg">
+<path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"></path>
+</svg>
+<span class="fcc_sr_only">Submit your search query</span>
+</button>
+<div id="dropdown-container"></div>
+</div>
+</form>
+</div>
+<div class="site-nav-middle">
+<a class="site-nav-logo" data-test-label="site-nav-logo" href="https://www.freecodecamp.org/news/"><img alt="freeCodeCamp.org" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"/></a>
+</div>
+<div class="site-nav-right">
+<div class="nav-group">
+<a class="nav-forum" data-test-label="forum-button" href="https://forum.freecodecamp.org/" id="nav-forum" rel="noopener noreferrer" target="_blank">Forum</a>
+<a class="toggle-button-nav" data-test-label="donate-button" href="https://www.freecodecamp.org/donate/" id="nav-donate" rel="noopener noreferrer" target="_blank">Donate</a>
+</div>
+</div>
+</nav>
+<a class="banner" data-test-label="banner" id="banner" rel="noopener noreferrer" target="_blank">
+<p id="banner-text"></p>
+</a>
+
+<div id="error-message"></div>
+<main class="site-main outer" id="site-main">
+<div class="inner">
+<section class="post-feed">
+<article class="post-card" data-test-label="post-card">
+<a aria-label="From drop-out to software architect with Jason Lengstorf [Podcast #167]" class="post-card-image-link" href="/news/from-drop-out-to-software-architect-with-jason-lengstorf-podcast-167/">
+<img alt="From drop-out to software architect with Jason Lengstorf [Podcast #167]" class="post-card-image" data-test-label="feature-image" height="1080" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743796461357/f3d19cd7-e6f5-4d7c-8bfc-eb974bc8da68.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743796461357/f3d19cd7-e6f5-4d7c-8bfc-eb974bc8da68.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/podcast/">
+                                #podcast
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/from-drop-out-to-software-architect-with-jason-lengstorf-podcast-167/">
+                            From drop-out to software architect with Jason Lengstorf [Podcast #167]
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/quincy/">
+<img alt="Quincy Larson" class="author-profile-image" data-test-label="profile-image" height="400" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1640878938509/PLqvxeH9g.jpeg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1640878938509/PLqvxeH9g.jpeg 30w" width="400"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/quincy/">
+                
+                    Quincy Larson
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-04T20:32:02.355Z">
+                19 hours ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="Understanding Vulnerabilities and Exploits for Ethical Hackers" class="post-card-image-link" href="/news/vulnerabilities-vs-exploits-for-ethical-hackers/">
+<img alt="Understanding Vulnerabilities and Exploits for Ethical Hackers" class="post-card-image" data-test-label="feature-image" height="1080" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743631883009/63a15afa-c901-4445-b646-cd9a4c44e964.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743631883009/63a15afa-c901-4445-b646-cd9a4c44e964.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/security/">
+                                #Security
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/vulnerabilities-vs-exploits-for-ethical-hackers/">
+                            Understanding Vulnerabilities and Exploits for Ethical Hackers
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/manishshivanandhan/">
+<img alt="Manish Shivanandhan" class="author-profile-image" data-test-label="profile-image" height="500" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1725238262566/37625c8b-4d87-4b8c-8fb7-b4fdcf34de9e.png?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1725238262566/37625c8b-4d87-4b8c-8fb7-b4fdcf34de9e.png?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="500"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/manishshivanandhan/">
+                
+                    Manish Shivanandhan
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-04T15:08:46.784Z">
+                a day ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Use Wireshark Filters to Analyze Your Network Traffic" class="post-card-image-link" href="/news/use-wireshark-filters-to-analyze-network-traffic/">
+<img alt="How to Use Wireshark Filters to Analyze Your Network Traffic" class="post-card-image" data-test-label="feature-image" height="1080" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743684532493/cc26aa99-fc7a-4b47-ab16-60dac77561fd.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743684532493/cc26aa99-fc7a-4b47-ab16-60dac77561fd.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/cybersecurity-1/">
+                                ##cybersecurity
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/use-wireshark-filters-to-analyze-network-traffic/">
+                            How to Use Wireshark Filters to Analyze Your Network Traffic
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/huhuhang/">
+<img alt="Hang Hu" class="author-profile-image" data-test-label="profile-image" height="96" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729126270285/54f43596-ea3a-4b06-a4fc-23793c60409b.jpeg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1729126270285/54f43596-ea3a-4b06-a4fc-23793c60409b.jpeg 30w" width="96"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/huhuhang/">
+                
+                    Hang Hu
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-03T12:49:20.923Z">
+                2 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="The Cryptography Handbook: Exploring RSA PKCSv1.5, OAEP, and PSS" class="post-card-image-link" href="/news/the-cryptography-handbook-rsa-algorithm/">
+<img alt="The Cryptography Handbook: Exploring RSA PKCSv1.5, OAEP, and PSS" class="post-card-image" data-test-label="feature-image" height="1080" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743630655223/f7e0c094-2103-42cd-97bd-be79d14fff67.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743630655223/f7e0c094-2103-42cd-97bd-be79d14fff67.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/cryptography/">
+                                #Cryptography
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/the-cryptography-handbook-rsa-algorithm/">
+                            The Cryptography Handbook: Exploring RSA PKCSv1.5, OAEP, and PSS
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/hamdaan/">
+<img alt="Hamdaan Ali" class="author-profile-image" data-test-label="profile-image" height="1103" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1724823762859/39ea3eac-1da6-409c-99c9-aa5458cddc86.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1724823762859/39ea3eac-1da6-409c-99c9-aa5458cddc86.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="1050"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/hamdaan/">
+                
+                    Hamdaan Ali
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-02T22:04:38.625Z">
+                3 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Deploy a Node.js Application on AWS" class="post-card-image-link" href="/news/how-to-deploy-a-nodejs-application-on-aws/">
+<img alt="How to Deploy a Node.js Application on AWS" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743611764466/96a89440-1c72-4ac0-861d-0ea29aeb90bf.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743611764466/96a89440-1c72-4ac0-861d-0ea29aeb90bf.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/aws/">
+                                #AWS
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/how-to-deploy-a-nodejs-application-on-aws/">
+                            How to Deploy a Node.js Application on AWS
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/Tobilyn77/">
+<img alt="Oluwatobi" class="author-profile-image" data-test-label="profile-image" height="500" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1690019565387/bdfa5211-2e0b-4164-a5dd-a7aedaca5da5.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1690019565387/bdfa5211-2e0b-4164-a5dd-a7aedaca5da5.png 30w" width="500"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/Tobilyn77/">
+                
+                    Oluwatobi
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-02T16:36:18.698Z">
+                3 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="Code a full stack Instagram Clone with Laravel and MongoDB" class="post-card-image-link" href="/news/code-a-full-stack-instagram-clone-with-laravel-and-mongodb/">
+<img alt="Code a full stack Instagram Clone with Laravel and MongoDB" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743605110164/9ae2ed21-4956-4b0e-b7c4-4ccc14e9df9f.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743605110164/9ae2ed21-4956-4b0e-b7c4-4ccc14e9df9f.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/laravel/">
+                                #Laravel
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/code-a-full-stack-instagram-clone-with-laravel-and-mongodb/">
+                            Code a full stack Instagram Clone with Laravel and MongoDB
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/beaucarnes/">
+<img alt="Beau Carnes" class="author-profile-image" data-test-label="profile-image" height="2305" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1713211849730/O5mmKs5h0.jpg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1713211849730/O5mmKs5h0.jpg 30w" width="2164"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/beaucarnes/">
+                
+                    Beau Carnes
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-02T14:51:42.749Z">
+                3 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="Fetch API vs. Axios vs. Alova: Which HTTP Client Should You Use in 2025?" class="post-card-image-link" href="/news/fetch-api-vs-axios-vs-alova/">
+<img alt="Fetch API vs. Axios vs. Alova: Which HTTP Client Should You Use in 2025?" class="post-card-image" data-test-label="feature-image" height="400" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743605319873/9f7583a0-1b01-4714-9fe6-f39bed3954e8.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743605319873/9f7583a0-1b01-4714-9fe6-f39bed3954e8.png" width="600"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/alova/">
+                                #Alova
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/fetch-api-vs-axios-vs-alova/">
+                            Fetch API vs. Axios vs. Alova: Which HTTP Client Should You Use in 2025?
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/AbdullahInBytes/">
+<img alt="Abdullah Salaudeen" class="author-profile-image" data-test-label="profile-image" height="2008" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729183202648/2ab6fc3e-8533-40e8-b289-cbfbbd3eeaa9.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1729183202648/2ab6fc3e-8533-40e8-b289-cbfbbd3eeaa9.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="1328"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/AbdullahInBytes/">
+                
+                    Abdullah Salaudeen
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-02T14:48:52.725Z">
+                3 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="From Failure to International Success: How Online Learning Platforms Saved My Life" class="post-card-image-link" href="/news/how-online-learning-platforms-saved-my-life/">
+<img alt="From Failure to International Success: How Online Learning Platforms Saved My Life" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743601355025/2f8c32a4-c451-4860-b4e2-f02b690fb928.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743601355025/2f8c32a4-c451-4860-b4e2-f02b690fb928.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/learning-journey/">
+                                #Learning Journey
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/how-online-learning-platforms-saved-my-life/">
+                            From Failure to International Success: How Online Learning Platforms Saved My Life
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/tiagomonteiro/">
+<img alt="Tiago Capelo Monteiro" class="author-profile-image" data-test-label="profile-image" height="288" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1735161054988/06357d6c-c812-43ca-a44d-a50b4140dcb1.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1735161054988/06357d6c-c812-43ca-a44d-a50b4140dcb1.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="288"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/tiagomonteiro/">
+                
+                    Tiago Capelo Monteiro
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-02T13:42:53.138Z">
+                3 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="Understand and Code DeepSeek V3" class="post-card-image-link" href="/news/understand-and-code-deepseek-v3/">
+<img alt="Understand and Code DeepSeek V3" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743528561674/7a60918e-265c-4201-a8a6-eec530f3149a.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743528561674/7a60918e-265c-4201-a8a6-eec530f3149a.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/deepseekr1/">
+                                #DeepSeekR1
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/understand-and-code-deepseek-v3/">
+                            Understand and Code DeepSeek V3
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/beaucarnes/">
+<img alt="Beau Carnes" class="author-profile-image" data-test-label="profile-image" height="2305" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1713211849730/O5mmKs5h0.jpg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1713211849730/O5mmKs5h0.jpg 30w" width="2164"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/beaucarnes/">
+                
+                    Beau Carnes
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-04-01T17:29:43.590Z">
+                4 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Build a Team of AI Agents for Your Website for Free Using Agno and Groq" class="post-card-image-link" href="/news/build-a-team-of-ai-agents-for-your-website-for-free/">
+<img alt="How to Build a Team of AI Agents for Your Website for Free Using Agno and Groq" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742397437476/0ffa13b0-c668-40d7-864f-596f523f6101.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1742397437476/0ffa13b0-c668-40d7-864f-596f523f6101.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/javascript/">
+                                #JavaScript
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/build-a-team-of-ai-agents-for-your-website-for-free/">
+                            How to Build a Team of AI Agents for Your Website for Free Using Agno and Groq
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/andrewbaisden/">
+<img alt="Andrew Baisden" class="author-profile-image" data-test-label="profile-image" height="800" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1736269455564/228c30b5-b167-4a41-81ea-5d0a875b12bd.png?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1736269455564/228c30b5-b167-4a41-81ea-5d0a875b12bd.png?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="800"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/andrewbaisden/">
+                
+                    Andrew Baisden
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-31T22:46:11.824Z">
+                5 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="From broke musician to working dev. How college drop-out Ryan Furrer taught himself to code [Podcast #166]" class="post-card-image-link" href="/news/from-broke-musician-to-working-dev-ryan-furrer-podcast-166/">
+<img alt="From broke musician to working dev. How college drop-out Ryan Furrer taught himself to code [Podcast #166]" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743210493481/822f4059-5ddc-4df6-b11b-814e747544c6.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743210493481/822f4059-5ddc-4df6-b11b-814e747544c6.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/learn-to-code/">
+                                #learn to code
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/from-broke-musician-to-working-dev-ryan-furrer-podcast-166/">
+                            From broke musician to working dev. How college drop-out Ryan Furrer taught himself to code [Podcast #166]
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/quincy/">
+<img alt="Quincy Larson" class="author-profile-image" data-test-label="profile-image" height="400" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1640878938509/PLqvxeH9g.jpeg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1640878938509/PLqvxeH9g.jpeg 30w" width="400"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/quincy/">
+                
+                    Quincy Larson
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-28T19:27:19.415Z">
+                8 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="Why Your Code is Slow: Common  Performance Mistakes Beginners Make" class="post-card-image-link" href="/news/why-your-code-is-slow-common-performance-mistakes-beginners-make/">
+<img alt="Why Your Code is Slow: Common  Performance Mistakes Beginners Make" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743176201295/448f0407-8a15-4b59-a91f-8a197bc07578.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743176201295/448f0407-8a15-4b59-a91f-8a197bc07578.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/codenewbies/">
+                                ##codenewbies
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/why-your-code-is-slow-common-performance-mistakes-beginners-make/">
+                            Why Your Code is Slow: Common  Performance Mistakes Beginners Make
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/RAHULISM/">
+<img alt="Rahul" class="author-profile-image" data-test-label="profile-image" height="1024" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1702890236019/qjeFWXDh7.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1702890236019/qjeFWXDh7.png 30w" width="1024"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/RAHULISM/">
+                
+                    Rahul
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-28T15:38:18.039Z">
+                8 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Deploy a Restful Web Service on Microsoft Azure App Service" class="post-card-image-link" href="/news/deploy-a-restful-web-service-on-microsoft-azure-app-service/">
+<img alt="How to Deploy a Restful Web Service on Microsoft Azure App Service" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743176028047/61eba7a3-5505-4152-9df5-59a1cb8c61ac.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743176028047/61eba7a3-5505-4152-9df5-59a1cb8c61ac.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/azure/">
+                                #Azure
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/deploy-a-restful-web-service-on-microsoft-azure-app-service/">
+                            How to Deploy a Restful Web Service on Microsoft Azure App Service
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/Ayobami6/">
+<img alt="Alaran Ayobami" class="author-profile-image" data-test-label="profile-image" height="500" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1676372695768/f47b3cec-a2b9-4264-b4f0-0cc6069a79fd.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1676372695768/f47b3cec-a2b9-4264-b4f0-0cc6069a79fd.png 30w" width="500"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/Ayobami6/">
+                
+                    Alaran Ayobami
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-28T15:34:24.295Z">
+                8 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Set Up a Home VPN Using Tailscale on a Raspberry Pi" class="post-card-image-link" href="/news/set-up-a-home-vpn-using-tailscale-on-a-raspberry-pi/">
+<img alt="How to Set Up a Home VPN Using Tailscale on a Raspberry Pi" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743175949441/1a8c4705-556c-4a1f-899a-9ac8e968fdc3.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743175949441/1a8c4705-556c-4a1f-899a-9ac8e968fdc3.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/iot/">
+                                #iot
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/set-up-a-home-vpn-using-tailscale-on-a-raspberry-pi/">
+                            How to Set Up a Home VPN Using Tailscale on a Raspberry Pi
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/LifeofDan-EL/">
+<img alt="Daniel Anomfueme" class="author-profile-image" data-test-label="profile-image" height="3527" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743176574794/6bdc8b38-acc9-4203-bf3f-a257b0d7af3a.png?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743176574794/6bdc8b38-acc9-4203-bf3f-a257b0d7af3a.png?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="3527"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/LifeofDan-EL/">
+                
+                    Daniel Anomfueme
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-28T15:32:45.025Z">
+                8 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Send Emails in Python using Mailtrap SMTP and the Email API" class="post-card-image-link" href="/news/send-emails-in-python-using-mailtrap-smtp-and-the-email-api/">
+<img alt="How to Send Emails in Python using Mailtrap SMTP and the Email API" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743110284000/6fb2a037-ddca-4625-acfb-cffbd167ec55.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743110284000/6fb2a037-ddca-4625-acfb-cffbd167ec55.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/phyton/">
+                                #Phyton
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/send-emails-in-python-using-mailtrap-smtp-and-the-email-api/">
+                            How to Send Emails in Python using Mailtrap SMTP and the Email API
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/trayalex812/">
+<img alt="Alex Tray" class="author-profile-image" data-test-label="profile-image" height="96" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1709643064930/5aeaf712-453d-4235-9910-dec91d688fae.jpeg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1709643064930/5aeaf712-453d-4235-9910-dec91d688fae.jpeg 30w" width="96"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/trayalex812/">
+                
+                    Alex Tray
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-28T13:59:31.054Z">
+                8 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="Learn the top Excel formulas and functions" class="post-card-image-link" href="/news/learn-the-top-excel-formulas-and-functions/">
+<img alt="Learn the top Excel formulas and functions" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743086651754/1f008643-281a-452a-bc45-c8247f23ddb9.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743086651754/1f008643-281a-452a-bc45-c8247f23ddb9.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/excel/">
+                                #excel
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/learn-the-top-excel-formulas-and-functions/">
+                            Learn the top Excel formulas and functions
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/beaucarnes/">
+<img alt="Beau Carnes" class="author-profile-image" data-test-label="profile-image" height="2305" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1713211849730/O5mmKs5h0.jpg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1713211849730/O5mmKs5h0.jpg 30w" width="2164"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/beaucarnes/">
+                
+                    Beau Carnes
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-27T14:44:15.400Z">
+                9 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="An Animated Introduction to Programming in C++" class="post-card-image-link" href="/news/learn-programming-in-cpp/">
+<img alt="An Animated Introduction to Programming in C++" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743028744653/12f33ee5-4ef4-47da-b50d-060a9ee327ce.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743028744653/12f33ee5-4ef4-47da-b50d-060a9ee327ce.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/cpp/">
+                                #C++
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/learn-programming-in-cpp/">
+                            An Animated Introduction to Programming in C++
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/markm208/">
+<img alt="Mark Mahoney" class="author-profile-image" data-test-label="profile-image" height="500" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742697935887/aa3553a0-8522-481b-bda8-5bf4e1df7249.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1742697935887/aa3553a0-8522-481b-bda8-5bf4e1df7249.png 30w" width="500"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/markm208/">
+                
+                    Mark Mahoney
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-26T23:21:35.536Z">
+                10 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Move Figma Components to Penpot" class="post-card-image-link" href="/news/how-to-recreate-figma-components-in-penpot/">
+<img alt="How to Move Figma Components to Penpot" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743028701920/ef200f8f-888d-4658-a5b0-ffa483edbdcf.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743028701920/ef200f8f-888d-4658-a5b0-ffa483edbdcf.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/design-systems/">
+                                #Design Systems
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/how-to-recreate-figma-components-in-penpot/">
+                            How to Move Figma Components to Penpot
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/HijabiCoder/">
+<img alt="Fatuma Abdullahi" class="author-profile-image" data-test-label="profile-image" height="400" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1724965180329/91b0ecb6-e0df-4b03-a25f-cc1b92b3277d.png?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1724965180329/91b0ecb6-e0df-4b03-a25f-cc1b92b3277d.png?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="400"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/HijabiCoder/">
+                
+                    Fatuma Abdullahi
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-26T23:20:33.197Z">
+                10 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="Create Microservices with NestJS" class="post-card-image-link" href="/news/create-microservices-with-nestjs/">
+<img alt="Create Microservices with NestJS" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743008871537/ad2be682-1c63-4d10-9cd3-7b33a7451b9b.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743008871537/ad2be682-1c63-4d10-9cd3-7b33a7451b9b.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/nestjs/">
+                                #nestjs
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/create-microservices-with-nestjs/">
+                            Create Microservices with NestJS
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/beaucarnes/">
+<img alt="Beau Carnes" class="author-profile-image" data-test-label="profile-image" height="2305" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1713211849730/O5mmKs5h0.jpg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1713211849730/O5mmKs5h0.jpg 30w" width="2164"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/beaucarnes/">
+                
+                    Beau Carnes
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-26T17:08:06.194Z">
+                10 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Host Local LLMs in a Docker Container on Azure" class="post-card-image-link" href="/news/host-llms-locally-in-docker-on-azure/">
+<img alt="How to Host Local LLMs in a Docker Container on Azure" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743005422195/56c65ac2-7a0d-4bd6-b969-a4c02eb3c42e.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743005422195/56c65ac2-7a0d-4bd6-b969-a4c02eb3c42e.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/docker/">
+                                #Docker
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/host-llms-locally-in-docker-on-azure/">
+                            How to Host Local LLMs in a Docker Container on Azure
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/shricodev/">
+<img alt="Shrijal Acharya" class="author-profile-image" data-test-label="profile-image" height="843" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1690212691207/7aRVsLw0n.jpg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1690212691207/7aRVsLw0n.jpg 30w" width="635"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/shricodev/">
+                
+                    Shrijal Acharya
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-26T16:10:45.078Z">
+                10 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="What is SRE? A Beginner's Guide to Site Reliability Engineering" class="post-card-image-link" href="/news/what-is-site-reliability-engineering/">
+<img alt="What is SRE? A Beginner's Guide to Site Reliability Engineering" class="post-card-image" data-test-label="feature-image" height="400" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743005263079/95dfe528-a274-4172-8a06-46187c1668eb.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743005263079/95dfe528-a274-4172-8a06-46187c1668eb.png" width="600"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/sre/">
+                                #SRE
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/what-is-site-reliability-engineering/">
+                            What is SRE? A Beginner's Guide to Site Reliability Engineering
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/omoladeekpeni/">
+<img alt="Omolade Ekpeni" class="author-profile-image" data-test-label="profile-image" height="3088" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743093664680/e35a5498-6142-4260-bb6a-42143beb9e47.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743093664680/e35a5498-6142-4260-bb6a-42143beb9e47.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="2316"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/omoladeekpeni/">
+                
+                    Omolade Ekpeni
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-26T16:07:59.395Z">
+                10 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Extract  YouTube Analytics Data and Analyze in Python" class="post-card-image-link" href="/news/extract-youtube-analytics-data-and-analyze-in-python/">
+<img alt="How to Extract  YouTube Analytics Data and Analyze in Python" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1743005089726/39e2323d-8f7b-4bf4-94cb-288aeb9cea4f.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1743005089726/39e2323d-8f7b-4bf4-94cb-288aeb9cea4f.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/python/">
+                                #Python
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/extract-youtube-analytics-data-and-analyze-in-python/">
+                            How to Extract  YouTube Analytics Data and Analyze in Python
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/adejumo/">
+<img alt="Adejumo Ridwan Suleiman" class="author-profile-image" data-test-label="profile-image" height="96" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1685623644044/7dd23e73-8a14-4aeb-a5bb-355b2b31d8ce.jpeg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1685623644044/7dd23e73-8a14-4aeb-a5bb-355b2b31d8ce.jpeg 30w" width="96"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/adejumo/">
+                
+                    Adejumo Ridwan Suleiman
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-26T16:05:29.893Z">
+                10 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="How to Connect Your AWS EC2 Instance to VS Code" class="post-card-image-link" href="/news/how-to-connect-your-aws-ec2-instance-to-vs-code/">
+<img alt="How to Connect Your AWS EC2 Instance to VS Code" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742397603245/c1ca0496-dbab-4570-8b6b-cb4bac5f72c1.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1742397603245/c1ca0496-dbab-4570-8b6b-cb4bac5f72c1.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/ec2/">
+                                #ec2
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/how-to-connect-your-aws-ec2-instance-to-vs-code/">
+                            How to Connect Your AWS EC2 Instance to VS Code
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/Ijay/">
+<img alt="Ijeoma Igboagu" class="author-profile-image" data-test-label="profile-image" height="1336" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1733677795297/60e26914-f7d7-4a16-ba9c-37abcd4770d4.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1733677795297/60e26914-f7d7-4a16-ba9c-37abcd4770d4.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="748"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/Ijay/">
+                
+                    Ijeoma Igboagu
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-25T17:48:02.797Z">
+                11 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="A Beginner's Guide to Observability in Cloud Native Applications" class="post-card-image-link" href="/news/observability-in-cloud-native-applications/">
+<img alt="A Beginner's Guide to Observability in Cloud Native Applications" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742917070693/fa372981-fb20-4230-bd9f-43b7255b8ced.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1742917070693/fa372981-fb20-4230-bd9f-43b7255b8ced.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/otlp-resource-attributes/">
+                                #otlp resource attributes
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/observability-in-cloud-native-applications/">
+                            A Beginner's Guide to Observability in Cloud Native Applications
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/nwanduka/">
+<img alt="Victoria Nduka" class="author-profile-image" data-test-label="profile-image" height="4032" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729406451250/7d75d27e-12d1-44f2-83dd-064593deadf2.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1729406451250/7d75d27e-12d1-44f2-83dd-064593deadf2.jpeg?w=500&amp;h=500&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp 30w" width="3024"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/nwanduka/">
+                
+                    Victoria Nduka
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-25T16:14:36.364Z">
+                11 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+<article class="post-card" data-test-label="post-card">
+<a aria-label="Orchestrating AWS Lambda with GraphQL and Apollo Connectors" class="post-card-image-link" href="/news/how-to-orchestrate-aws-lambda-with-graphql-and-apollo-connectors/">
+<img alt="Orchestrating AWS Lambda with GraphQL and Apollo Connectors" class="post-card-image" data-test-label="feature-image" height="1080" loading="lazy" onerror="this.style.display='none'" sizes="(max-width: 360px) 300px, (max-width: 655px) 600px, (max-width: 767px) 1000px, (min-width: 768px) 300px, 92vw" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1742917115054/07184be6-5384-4861-a676-b72c06ff7c65.png" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1742917115054/07184be6-5384-4861-a676-b72c06ff7c65.png" width="1920"/>
+</a>
+<div class="post-card-content">
+<div class="post-card-content-link">
+<header class="post-card-header">
+<span class="post-card-tags">
+<a dir="ltr" href="/news/tag/graphql/">
+                                #GraphQL
+                            </a>
+</span>
+<h2 class="post-card-title">
+<a href="/news/how-to-orchestrate-aws-lambda-with-graphql-and-apollo-connectors/">
+                            Orchestrating AWS Lambda with GraphQL and Apollo Connectors
+                        </a>
+</h2>
+</header>
+</div>
+<footer class="post-card-meta">
+<ul class="author-list" data-test-label="author-list">
+<li class="author-list-item" data-test-label="author-list-item">
+<a class="static-avatar" href="/news/author/rwalters/">
+<img alt="Rob Walters" class="author-profile-image" data-test-label="profile-image" height="96" onerror="this.style.display='none'" sizes="30px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1741278426230/05b2368f-f2c7-4c49-a0f3-05b1fb90b236.jpeg" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1741278426230/05b2368f-f2c7-4c49-a0f3-05b1fb90b236.jpeg 30w" width="96"/>
+</a>
+<span class="meta-content">
+<a class="meta-item" data-test-label="profile-link" href="/news/author/rwalters/">
+                
+                    Rob Walters
+                
+            </a>
+<time class="meta-item" data-test-label="post-published-time" datetime="2025-03-25T16:12:16.340Z">
+                11 days ago
+            </time>
+</span>
+</li>
+</ul>
+</footer>
+</div>
+</article>
+</section>
+<div class="read-more-row">
+<button data-test-label="load-more-articles-button" id="readMoreBtn">Load More Articles</button>
+</div>
+
+</div>
+</main>
+<footer class="site-footer">
+<div class="footer-top">
+<div class="footer-desc-col">
+<p data-test-label="tax-exempt-status">freeCodeCamp is a donor-supported tax-exempt 501(c)(3) charity organization (United States Federal Tax Identification Number: 82-0779546)</p>
+<p data-test-label="mission-statement">Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public.</p>
+<p data-test-label="donation-initiatives">Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services, and staff.</p>
+<p class="footer-donation" data-test-label="donate-text">
+                You can <a class="inline" href="https://www.freecodecamp.org/donate/" rel="noopener noreferrer" target="_blank">make a tax-deductible donation here</a>.
+            </p>
+</div>
+<div class="trending-guides" data-test-label="trending-guides">
+<h2 class="col-header" id="trending-guides">Trending Books and Handbooks</h2>
+<ul aria-labelledby="trending-guides" class="trending-guides-articles">
+<li>
+<a href="https://www.freecodecamp.org/news/complete-guide-to-css-transform-functions-and-properties/" rel="noopener noreferrer" target="_blank">Learn CSS Transform
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/how-to-create-a-static-blog-with-lume/" rel="noopener noreferrer" target="_blank">Build a Static Blog
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/how-to-build-an-ai-chatbot-with-redis-python-and-gpt/" rel="noopener noreferrer" target="_blank">Build an AI Chatbot
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/what-is-programming-tutorial-for-beginners/" rel="noopener noreferrer" target="_blank">What is Programming?
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/" rel="noopener noreferrer" target="_blank">Python Code Examples
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/a-practical-guide-to-start-opensource-contributions/" rel="noopener noreferrer" target="_blank">Open Source for Devs
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/http-full-course/" rel="noopener noreferrer" target="_blank">HTTP Networking in JS
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/how-to-write-unit-tests-in-react-redux/" rel="noopener noreferrer" target="_blank">Write React Unit Tests
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/introduction-to-algorithms-with-javascript-examples/" rel="noopener noreferrer" target="_blank">Learn Algorithms in JS
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/how-to-write-clean-code/" rel="noopener noreferrer" target="_blank">How to Write Clean Code
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/the-php-handbook/" rel="noopener noreferrer" target="_blank">Learn PHP
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/the-java-handbook/" rel="noopener noreferrer" target="_blank">Learn Java
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/the-swift-handbook/" rel="noopener noreferrer" target="_blank">Learn Swift
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/learn-golang-handbook/" rel="noopener noreferrer" target="_blank">Learn Golang
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/get-started-with-nodejs/" rel="noopener noreferrer" target="_blank">Learn Node.js
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/complete-guide-to-css-grid/" rel="noopener noreferrer" target="_blank">Learn CSS Grid
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/learn-solidity-handbook/" rel="noopener noreferrer" target="_blank">Learn Solidity
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/the-express-handbook/" rel="noopener noreferrer" target="_blank">Learn Express.js
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/javascript-es-modules-and-module-bundlers/" rel="noopener noreferrer" target="_blank">Learn JS Modules
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/apache-kafka-handbook/" rel="noopener noreferrer" target="_blank">Learn Apache Kafka
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api/" rel="noopener noreferrer" target="_blank">REST API Best Practices
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/front-end-javascript-development-react-angular-vue-compared/" rel="noopener noreferrer" target="_blank">Front-End JS Development
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/" rel="noopener noreferrer" target="_blank">Learn to Build REST APIs
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/build-strongly-typed-polymorphic-components-with-react-and-typescript/" rel="noopener noreferrer" target="_blank">Intermediate TS and React
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/command-line-for-beginners/" rel="noopener noreferrer" target="_blank">Command Line for Beginners
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/an-introduction-to-operating-systems/" rel="noopener noreferrer" target="_blank">Intro to Operating Systems
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/building-consuming-and-documenting-a-graphql-api/" rel="noopener noreferrer" target="_blank">Learn to Build GraphQL APIs
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/oss-security-best-practices/" rel="noopener noreferrer" target="_blank">OSS Security Best Practices
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/design-patterns-for-distributed-systems/" rel="noopener noreferrer" target="_blank">Distributed Systems Patterns
+                    </a>
+</li>
+<li>
+<a href="https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/" rel="noopener noreferrer" target="_blank">Software Architecture Patterns
+                    </a>
+</li>
+</ul>
+<div class="spacer" style="padding: 15px 0;"></div>
+<div>
+<h2 class="col-header" id="mobile-app">
+                    Mobile App
+                </h2>
+<div class="min-h-[1px] px-[15px] md:w-2/3 md:ml-[16.6%]">
+<ul aria-labelledby="mobile-app" class="mobile-app-container">
+<li>
+<a href="https://apps.apple.com/us/app/freecodecamp/id6446908151?itsct=apps_box_link&amp;itscg=30200" rel="noopener noreferrer" target="_blank">
+<img alt="Download on the App Store" lang="en" src="https://cdn.freecodecamp.org/platform/universal/apple-store-badge.svg"/>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=org.freecodecamp" rel="noopener noreferrer" target="_blank">
+<img alt="Get it on Google Play" lang="en" src="https://cdn.freecodecamp.org/platform/universal/google-play-badge.svg"/>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<h2 class="col-header" data-test-label="our-nonprofit">Our Charity</h2>
+<div class="our-nonprofit">
+<span data-test-label="powered-by">
+                    Publication powered by Hashnode
+                </span>
+<a data-test-label="about" href="https://www.freecodecamp.org/news/about/" rel="noopener noreferrer" target="_blank">
+                About
+            </a>
+<a data-test-label="alumni" href="https://www.linkedin.com/school/free-code-camp/people/" rel="noopener noreferrer" target="_blank">
+                Alumni Network
+            </a>
+<a data-test-label="open-source" href="https://github.com/freeCodeCamp/" rel="noopener noreferrer" target="_blank">
+                Open Source
+            </a>
+<a data-test-label="shop" href="https://www.freecodecamp.org/news/shop/" rel="noopener noreferrer" target="_blank">
+                Shop
+            </a>
+<a data-test-label="support" href="https://www.freecodecamp.org/news/support/" rel="noopener noreferrer" target="_blank">
+                Support
+            </a>
+<a data-test-label="sponsors" href="https://www.freecodecamp.org/news/sponsors/" rel="noopener noreferrer" target="_blank">
+                Sponsors
+            </a>
+<a data-test-label="honesty" href="https://www.freecodecamp.org/news/academic-honesty-policy/" rel="noopener noreferrer" target="_blank">
+                Academic Honesty
+            </a>
+<a data-test-label="coc" href="https://www.freecodecamp.org/news/code-of-conduct/" rel="noopener noreferrer" target="_blank">
+                Code of Conduct
+            </a>
+<a data-test-label="privacy" href="https://www.freecodecamp.org/news/privacy-policy/" rel="noopener noreferrer" target="_blank">
+                Privacy Policy
+            </a>
+<a data-test-label="tos" href="https://www.freecodecamp.org/news/terms-of-service/" rel="noopener noreferrer" target="_blank">
+                Terms of Service
+            </a>
+<a data-test-label="copyright" href="https://www.freecodecamp.org/news/copyright-policy/" rel="noopener noreferrer" target="_blank">
+                Copyright Policy
+            </a>
+</div>
+</div>
+</footer>
+</div>
+
+</body>
+</html>

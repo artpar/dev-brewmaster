@@ -1,0 +1,17 @@
+{
+  "url": "https://www.freecodecamp.org/news",
+  "domain": "freecodecamp.org",
+  "current_date": "2025-04-05",
+  "previous_date": "2025-04-04",
+  "has_changes": true,
+  "new_articles": [
+    {
+      "title": "What is SRE? A Beginner's Guide to Site Reliability Engineering",
+      "url": "/news/what-is-site-reliability-engineering/",
+      "date": "2025-03-26T16:07:59.395Z",
+      "content": "freeCodeCamp is a donor-supported tax-exempt 501(c)(3) charity organization (United States Federal Tax Identification Number: 82-0779546)"
+    }
+  ],
+  "changed_articles": [],
+  "removed_articles": []
+}

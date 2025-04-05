@@ -1,0 +1,17 @@
+{
+  "url": "https://css-tricks.com",
+  "domain": "css-tricks.com",
+  "current_date": "2025-04-05",
+  "previous_date": "2025-04-04",
+  "has_changes": true,
+  "new_articles": [
+    {
+      "title": "Automated Visual Regression Testing With Playwright",
+      "url": "https://css-tricks.com/automated-visual-regression-testing-with-playwright/",
+      "date": "",
+      "content": "With visual regression testing, we can update a page, take screenshots before and after the fact, and compare the results for unintended changes. In this article, learn how to set up visual regression testing using Playwright."
+    }
+  ],
+  "changed_articles": [],
+  "removed_articles": []
+}
