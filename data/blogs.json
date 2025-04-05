@@ -1,0 +1,54 @@
+{
+  "blogs": [
+    {
+      "url": "https://news.ycombinator.com",
+      "name": "Hacker News",
+      "category": "tech"
+    },
+    {
+      "url": "https://techcrunch.com",
+      "name": "TechCrunch",
+      "category": "tech"
+    },
+    {
+      "url": "https://www.theverge.com",
+      "name": "The Verge",
+      "category": "tech"
+    },
+    {
+      "url": "https://www.wired.com",
+      "name": "Wired",
+      "category": "tech"
+    },
+    {
+      "url": "https://ai.googleblog.com",
+      "name": "Google AI Blog",
+      "category": "ai"
+    },
+    {
+      "url": "https://openai.com/blog",
+      "name": "OpenAI Blog",
+      "category": "ai"
+    },
+    {
+      "url": "https://blog.deeplearning.ai",
+      "name": "DeepLearning.AI Blog",
+      "category": "ai"
+    },
+    {
+      "url": "https://www.freecodecamp.org/news",
+      "name": "freeCodeCamp",
+      "category": "coding"
+    },
+    {
+      "url": "https://dev.to",
+      "name": "DEV Community",
+      "category": "coding"
+    },
+    {
+      "url": "https://css-tricks.com",
+      "name": "CSS-Tricks",
+      "category": "webdev"
+    }
+  ]
+}
