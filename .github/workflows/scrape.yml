@@ -1,15 +1,9 @@
 name: Weekly Blog Scraper
 
 on:
-  schedule:
-    - cron: '0 0 * * 0'  # Run at midnight every Sunday
-  workflow_dispatch:      # Allow manual triggering
   push:
     branches:
       - main
-    paths:
-      - 'data/blogs.json'
-      - 'src/**'
 
 jobs:
   scrape:
