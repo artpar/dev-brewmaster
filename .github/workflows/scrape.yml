@@ -26,7 +26,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run scraper
-        run: python src/main
+        run: python src/main.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
