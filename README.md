@@ -64,7 +64,7 @@ blog-newsletter/
 To run the newsletter generator manually:
 
 ```
-python -m src.main
+python -m src/main
 ```
 
 This will:
